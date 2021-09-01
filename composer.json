@@ -1,0 +1,41 @@
+{
+  "name": "pipirima/pimcore-ftp-export",
+  "type": "pimcore-bundle",
+  "license": "GPL-2.0-or-later",
+  "description": "Automatically exports new assets from given directory into FTP server.",
+  "keywords": [
+    "pimcore",
+    "observer",
+    "events",
+    "pimcore-plugin",
+    "pimcore-bundle",
+    "ftp-export"
+  ],
+  "homepage": "https://github.com/pipirima/PimcoreFtpExport",
+  "authors": [
+    {
+      "name": "Wojciech Peisert",
+      "email": "info@sauron.pl",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "pimcore/pimcore": "^6",
+    "nicolab/php-ftp-client": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pipirima\\PimcoreFtpExportBundle\\": "src"
+    }
+  },
+  "extra": {
+    "pimcore": {
+      "bundles": [
+        "PimcoreFtpExportBundle"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
