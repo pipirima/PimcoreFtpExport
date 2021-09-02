@@ -18,7 +18,7 @@ pimcore_ftp_export:
       ftp:
         server: example.com
         login: login
-        password: xxxxxxx
+        password: xxxxxx
 # passive mode or not; if not set, default FTP settings are used
         passive: true
 # ftp transfer mode: binary or ascii
