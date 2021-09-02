@@ -1,0 +1,35 @@
+# this is the example config file to be adjusted for your needs
+
+pimcore_ftp_export:
+# true/false - writes debug info into log file
+  debug: true
+# list of exports
+  exports:
+    -
+# true/false; default: true
+      active: true
+# export name; not used
+      name: products.csv
+# local asset folder; obligatory
+      local_folder: /exports/
+# remote filename; if not set, local filename will be used
+      remote_filename: products.csv
+# ftp settings
+      ftp:
+        server: example.com
+        login: login
+        password: xxxxxxx
+# passive mode or not; if not set, default FTP settings are used
+        passive: true
+# ftp transfer mode: binary or ascii
+        mode: ascii
+    -
+      active: true
+      local_folder: /exports2/
+      remote_filename: products2.pdf
+      ftp:
+        server: 2.example.com
+        login: login2
+        password: xxxxxxx2
+        passive: false
+        mode: binary
