@@ -7,11 +7,11 @@ use Pipirima\PimcoreFtpExportBundle\PimcoreFtpExportBundle;
 
 class Logger
 {
-    protected $debug;
+    protected bool $debug;
 
-    public function __construct(bool $debug = true)
+    public function __construct(?bool $debug = true)
     {
-        $this->debug = $debug;
+        $this->debug = boolval($debug);
     }
 
     public function log(string $message)
