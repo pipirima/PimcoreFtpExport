@@ -13,11 +13,7 @@ services:
         arguments:
             - '%pimcore_ftp_export.debug%'
 
-    Pipirima\PimcoreFtpExportBundle\Service\MailerService: ~
-    Pipirima\PimcoreFtpExportBundle\Service\MailFactory: ~
-    Pipirima\PimcoreFtpExportBundle\Service\WebsiteSettingsService: ~
     Pipirima\PimcoreFtpExportBundle\Service\FtpExportService: ~
-    Pipirima\PimcoreFtpExportBundle\Service\StringService: ~
     Pipirima\PimcoreFtpExportBundle\Service\ConfigService:
         arguments:
             - '%pimcore_ftp_export.exports%'
