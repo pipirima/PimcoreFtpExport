@@ -14,7 +14,7 @@ class ConfigService
 
     public function __construct(?array $config = [])
     {
-        $this->config = array($config);
+        $this->config = is_array($config) ? $config : [];
     }
 
     /**
