@@ -8,14 +8,7 @@ use Pimcore\Model\Asset;
 
 class FtpExportService
 {
-    private const WS_FTP_SERVER = 'ftp_export_server';
-    private const WS_FTP_USER = 'ftp_export_user';
-    private const WS_FTP_PASS = 'ftp_export_pass';
-    private const WS_FTP_LOCAL_FOLDER = 'ftp_export_local_folder';
-    private const WS_FTP_REMOTE_FILE = 'ftp_export_filename';
-
     private const REMOTE_TEMP_EXT = 'tra';
-    private const REMOTE_TARGET_EXT = 'csv';
 
     private FtpClient $ftpClient;
 

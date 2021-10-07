@@ -22,7 +22,8 @@
   "require": {
     "php": ">=7.4",
     "pimcore/pimcore": "^6",
-    "nicolab/php-ftp-client": "*"
+    "nicolab/php-ftp-client": "*",
+    "ext-ftp": "*"
   },
   "autoload": {
     "psr-4": {
