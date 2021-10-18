@@ -21,7 +21,7 @@
   ],
   "require": {
     "php": ">=7.4",
-    "pimcore/pimcore": "^6",
+    "pimcore/pimcore": "^6|^10",
     "nicolab/php-ftp-client": "*",
     "ext-ftp": "*"
   },
