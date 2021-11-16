@@ -18,6 +18,8 @@ services:
         arguments:
             - '%pimcore_ftp_export.exports%'
 
+    FtpClient\FtpClient: ~
+
     Pipirima\PimcoreFtpExportBundle\EventHandler\AssetEventHandler:
         tags:
             - { name: kernel.event_listener, event: pimcore.asset.postAdd, method: onAssetPostAdd }
