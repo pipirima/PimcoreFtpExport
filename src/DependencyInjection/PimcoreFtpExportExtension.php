@@ -30,7 +30,7 @@ class PimcoreFtpExportExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
-        $container->setParameter($this->getAlias() . '.exports', $config['exports']);
-        $container->setParameter($this->getAlias() . '.debug', $config['debug']);
+        $container->setParameter($this->getAlias() . '.exports', $config['exports'] ?? []);
+        $container->setParameter($this->getAlias() . '.debug', $config['debug'] ?? false);
     }
 }
