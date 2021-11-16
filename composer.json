@@ -33,7 +33,7 @@
   "extra": {
     "pimcore": {
       "bundles": [
-        "PimcoreFtpExportBundle"
+        "Pipirima\\PimcoreFtpExportBundle\\PimcoreFtpExportBundle"
       ]
     }
   },
