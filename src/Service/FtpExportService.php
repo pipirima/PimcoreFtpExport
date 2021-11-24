@@ -5,6 +5,7 @@ namespace Pipirima\PimcoreFtpExportBundle\Service;
 use FtpClient\FtpClient;
 use FtpClient\FtpException;
 use Pimcore\Model\Asset;
+use function GuzzleHttp\Psr7\str;
 
 class FtpExportService
 {
@@ -131,7 +132,7 @@ class FtpExportService
         $localTempFilename = tempnam("/tmp", "abc");
         $handle = fopen($localTempFilename, "w");
         $data = $asset->getData();
-        $this->logger->log("asset data sizeof: " . sizeof($data));
+        $this->logger->log("asset data length: " . strlen($data));
         fwrite($handle, $data);
         fclose($handle);
 
